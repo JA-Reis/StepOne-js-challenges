@@ -7,8 +7,19 @@
 // `Maria Silva` => `M.S.`
 // `Pedro Pedroso`  => `P.P`
 
-function abbrevName(firstName, lastName){
-	
-
+function abbrevName(firstName,lastName){
+	let firstInicial = firstName.charAt(0);
+	let secondInicial = lastName.charAt(0);
+	console.log(firstInicial.toUpperCase() + "." + secondInicial.toUpperCase() + ".");
 	return;
 }
+
+abbrevName("Airton","Reis")
+
+
+//Solução da Saty
+function abbrevName(firstName,lastName){
+	return firstName[0] + "." + lastName[0] + ".";
+}
+
+console.log(abbrevName("Airton","Reis"))

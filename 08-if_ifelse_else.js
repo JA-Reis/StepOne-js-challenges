@@ -32,12 +32,14 @@ num1 is equal to num2: num 1 é igual ao num2
 // e deve aparecer essa resposta:
 
 function findLargest(num1, num2, num3) {
-    if () {
-        console.log();
-    } else if () {
-        console.log();
-    } else if () {
-        console.log();
+    if (num1 > num2 && num1 > num3) {
+        console.log("‘num1’is the largest number");
+    } else if (num2 > num1 && num2 > num3) {
+        console.log("‘num2’is the largest number");
+    } else if (num3 > num1 && num3 > num2) {
+        console.log("num3’ is the largest number");
+    } else if (num1 == num2 && num1 == num3) {
+        console.log("All the numbers are equals");
     } else {
         console.log();
     }
@@ -46,3 +48,4 @@ function findLargest(num1, num2, num3) {
 console.log(findLargest(21,45,13)); //"45 is the largest number"
 console.log(findLargest(34,18,52)); //"52 is the largest number"
 console.log(findLargest(64,11,11)); //"64 is the largest number"
+console.log(findLargest(11,11,11)); 

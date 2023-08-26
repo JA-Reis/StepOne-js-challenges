@@ -7,3 +7,13 @@
 // Se não, deve mostrar no console a seguinte frase:
 
 // "You didn't passed the exam!"
+
+
+let note = 80;
+let examResult = note;
+
+if (examResult >= 75) {
+  console.log ("You passed the exam!")
+} else {
+  console.log ("You didn't passed the exam!")
+}
